@@ -4,11 +4,12 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{E92DA302-7104-4B68-9CAC-2311697DED12}</ProjectGuid>
-        <OutputType>Exe</OutputType>
+        <ProjectGuid>{74AB0D66-B238-4B41-85D3-404F8EAC9DEA}</ProjectGuid>
+        <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>Travel_Agency</RootNamespace>
-        <AssemblyName>Travel_Agency</AssemblyName>
+        <RootNamespace>Travel_Agency_Tests</RootNamespace>
+        <AssemblyName>Travel_Agency_Tests</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -36,19 +37,28 @@
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
+        <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c">
+            <HintPath>..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="xunit.assert, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c">
+            <HintPath>..\packages\xunit.assert.2.1.0\lib\dotnet\xunit.assert.dll</HintPath>
+        </Reference>
+        <Reference Include="xunit.core, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c">
+            <HintPath>..\packages\xunit.extensibility.core.2.1.0\lib\dotnet\xunit.core.dll</HintPath>
+        </Reference>
+        <Reference Include="xunit.execution.desktop, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c">
+            <HintPath>..\packages\xunit.extensibility.execution.2.1.0\lib\net45\xunit.execution.desktop.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="ConsoleService.cs" />
-        <Compile Include="Models\Customers.cs" />
-        <Compile Include="Models\Employees.cs" />
-        <Compile Include="Models\Hotels.cs" />
-        <Compile Include="Program.cs" />
+        <Compile Include="TravelAgencyTests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="Data\Customers.json" />
-      <Content Include="Data\Employees.json" />
-      <Content Include="Data\Hotels.json" />
+      <ProjectReference Include="..\Travel_Agency\Travel_Agency.csproj">
+        <Project>{e92da302-7104-4b68-9cac-2311697ded12}</Project>
+        <Name>Travel_Agency</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -58,5 +68,4 @@
     <Target Name="AfterBuild">
     </Target>
     -->
-
 </Project>

@@ -5,3 +5,4 @@ namespace Travel_Agency
         public bool IsAcceptingMarketing { get; set; }
     }
 }
+
