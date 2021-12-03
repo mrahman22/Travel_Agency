@@ -55,7 +55,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="TravelAgencyTests.cs" />
+        <Compile Include="AgencyTests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

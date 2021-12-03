@@ -10,8 +10,8 @@ namespace Travel_Agency
         
         public Agency(IFetchData data)
         {
-            Hotels = data.GetData<Hotels>(DataType.hotels);
-            Employees = data.GetData<Employees>(DataType.employees);
+            Hotels = data.GetData<Hotels>(DataType.Hotels);
+            Employees = data.GetData<Employees>(DataType.Employees);
         }
 
     }

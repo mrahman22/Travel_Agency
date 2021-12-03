@@ -5,12 +5,9 @@ namespace Travel_Agency
     internal class Program
     {
         public static void Main(string[] args)
-        {
-
-           Console.Write("Please may I take your name: ");
-           string name = Console.ReadLine();
-           var console = new ConsoleService();
-           console.Greeting(name);
+        { 
+            var data = new FetchData();
+            var hotels = data.GetData<Hotels>(DataType.Hotels);
         }
     }
 }
