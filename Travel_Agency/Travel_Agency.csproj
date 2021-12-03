@@ -32,6 +32,14 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+          <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+          <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
@@ -39,9 +47,13 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="ConsoleService.cs" />
+        <Compile Include="Models\Agency.cs" />
         <Compile Include="Models\Customers.cs" />
+        <Compile Include="Models\DataType.cs" />
         <Compile Include="Models\Employees.cs" />
+        <Compile Include="Models\FetchData.cs" />
         <Compile Include="Models\Hotels.cs" />
+        <Compile Include="Models\IFetchData.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
@@ -49,6 +61,9 @@
       <Content Include="Data\Customers.json" />
       <Content Include="Data\Employees.json" />
       <Content Include="Data\Hotels.json" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

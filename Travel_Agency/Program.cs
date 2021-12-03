@@ -9,8 +9,8 @@ namespace Travel_Agency
 
            Console.Write("Please may I take your name: ");
            string name = Console.ReadLine();
-           var console = new ConsoleService(name);
-           Console.Write(console);
+           var console = new ConsoleService();
+           console.Greeting(name);
         }
     }
 }
