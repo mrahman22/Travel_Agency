@@ -3,5 +3,7 @@
   &lt;Or&gt;
     &lt;ProjectFile&gt;74AB0D66-B238-4B41-85D3-404F8EAC9DEA/f:AgencyTests.cs&lt;/ProjectFile&gt;
     &lt;ProjectFile&gt;74AB0D66-B238-4B41-85D3-404F8EAC9DEA/f:HotelTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;74AB0D66-B238-4B41-85D3-404F8EAC9DEA/f:EmployeeTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;74AB0D66-B238-4B41-85D3-404F8EAC9DEA/f:CustomerTests.cs&lt;/ProjectFile&gt;
   &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

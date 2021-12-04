@@ -23,7 +23,6 @@ namespace Travel_Agency_Tests
             
             Assert.Equal("Diaz", employee.LastName);
             
-      
         }
         [Fact]
         public void CheckIfEmployeeIdIsSet()
@@ -32,7 +31,6 @@ namespace Travel_Agency_Tests
             employee.Id = Guid.NewGuid();
             
             Assert.NotEqual(Guid.Empty, employee.Id);
-
         }
     }
 }
